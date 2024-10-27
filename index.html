@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+            side  bar 
+    
+    -->
+    <div class="d-flex position-fixed menuall " style="height: 100vh;">
+        <div class="bg-black py-4 px-3 menu d-flex flex-column justify-content-between">
+            
+            <div class="h-50 ">
+                <ul class="p-0 ">
+                    <li class="searchclick">Serach</li>
+                    <li class="categotriesClick">Categotries</li>
+                    <li class="areaClick">Area</li>
+                    <li class="ingredientsClick">Ingredients</li>
+                    <li class="contactClick">Contact Us </li>
+                    
+                </ul>
+            </div>
+            <div class="">
+                <h6 class="text-white">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    Copyright Â© 2019 All Rights
+                    <br>
+                    Reserved
+                </h6>
+            </div>
+        </div>
+        <div class="bg-white d-flex flex-column  justify-content-between align-items-center px-2 py-4 ">
+            <i class=" sidebar text-yellow"> <img src="./img/logo.png" class="w-100" alt=""></i>
+            <i class="fa-solid fa-bars menubar sidebar "></i>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+            information
+    -->
+    <div class="d-flex justify-content-center informationDisplay  pt-5">
+        <!-- <div class="w-85 text-white d-flex justify-content-center ">
+            <div class="w-25">
+                <div class="w-100">
+                    <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3">
+                </div>
+                <div>
+                    <h4>name</h4>
+                </div>
+            </div>
+            <div class="w-75 ps-5">
+                <span class="h1">Instructions</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione deserunt nulla officia expedita perspiciatis reiciendis porro! Assumenda ullam voluptates nemo error temporibus accusamus minima eum soluta nam? Aliquid, ipsa facere!</p>
+                <h3>Area : <h4></h4></h3>
+                <h3>Category : <h4></h4></h3>
+                <h3>Recipes :<h4 class="d-inline bg-info rounded rounded-3 px-3 pb-1 mx-2">moaz</h4> <h4 class="d-inline bg-info rounded rounded-3 px-3 pb-1 mx-2">moaz</h4></h3>
+                <h3>tags: <br><a href="" class="text-bg-success text-decoration-none rounded rounded-3 small px-3"><small>source</small></a><a href="" class="text-bg-danger text-decoration-none rounded rounded-3 small mx-3 px-3"><small>youtube</small></a></h3>
+            </div>
+        </div>     -->
+    </div>
+                         
+
+    <!-- 
+        search 
+    -->
+    <div class="">
+        
+        <div class="search d-none p-5 d-flex justify-content-center">
+            <div class="mb-3 d-flex justify-content-center flex-column flex-lg-row align-items-center gap-5  w-85">
+                <input type="text" class="form-control bg-black text-white  searchinput" placeholder="Search By Name " aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control bg-black text-white  searchletterinput" maxlength="1" placeholder="Search By First Letter" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            
+        </div>
+    </div>
+
+     <!-- 
+            main show 
+    
+    -->
+
+
+    <div class="d-flex justify-content-center w-100 p-5">
+
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 gap-5 gy-5 w-75  main-show">
+            <!-- <div class="text-white ingredients text-center">
+                <i class="fa-solid fa-drumstick-bite"></i>
+                <h3>name of ing</h3>
+                <p>information</p>
+            </div> -->
+            
+           
+
+
+            <!-- <div class="inf" style="width: 18rem;">
+                <div class="  ">
+                    <div class="port-l w-fit ">
+                  
+                        <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3" alt="...">
+
+                        <div class="port-inner d-flex justify-content-center  flex-column  gap-5">
+                            <div>
+    
+                                <p>WEB DESIGN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="" style="width: 18rem;">
+                <div class="  ">
+                    <div class="port-l w-fit ">
+                  
+                        <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3" alt="...">
+
+                        <div class="port-inner d-flex justify-content-center  flex-column  gap-5">
+                            <div>
+    
+                                <p>WEB DESIGN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="" style="width: 18rem;">
+                <div class="  ">
+                    <div class="port-l w-fit ">
+                  
+                        <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3" alt="...">
+
+                        <div class="port-inner d-flex justify-content-center  flex-column  gap-5">
+                            <div>
+    
+                                <p>WEB DESIGN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="" style="width: 18rem;">
+                <div class="  ">
+                    <div class="port-l w-fit ">
+                  
+                        <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3" alt="...">
+
+                        <div class="port-inner d-flex justify-content-center  flex-column  gap-5">
+                            <div>
+    
+                                <p>WEB DESIGN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div class="" style="width: 18rem;">
+                <div class="  ">
+                    <div class="port-l w-fit ">
+                  
+                        <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3" alt="...">
+
+                        <div class="port-inner d-flex justify-content-center  flex-column  gap-5">
+                            <div>
+    
+                                <p>WEB DESIGN</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div> -->
+            
+        </div>
+
+    </div>
+
+
+
+    <!-- 
+    
+            catigory show
+    -->
+    <div class="d-flex justify-content-center">
+
+        <div class="row row-cols-4 gap-2 gy-4 w-90 ms-4 catigoryshow">
+     
+           
+
+<!-- 
+            <div class="" style="width: 18rem;">
+                <div class="  ">
+                    <div class="port-l w-fit ">
+                  
+                        <img src="https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg" class="w-100 rounded rounded-3" alt="...">
+
+                        <div class="port-inner d-flex justify-content-center  flex-column  gap-5">
+                            <div class="text-center">
+    
+                                <h5>moaz mohammed</h5>
+                                <p>lorem</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+             -->
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- 
+            area show
+    
+    -->
+            
+    <!-- <div class="d-flex justify-content-center ">
+
+        <div class="w-85 row row-cols-4 gy-5 areaShow">
+             <div class="text-center">
+                <i class="fa-solid fa-house-laptop text-white"></i>
+                <h3 class="text-white">moaz</h3>
+            </div> 
+            
+        </div> 
+    </div> -->
+
+
+
+
+    <!-- 
+    
+                contact us
+    -->
+    <div class="d-flex justify-content-center contact py-5 d-none">
+        <div class="w-75 justify-content-center row row-cols-1 row-cols-lg-3  g-3 align-self-end gap-3 ">
+            <div class="">
+                <input type="text" class="form-control  text-black   name my-2" placeholder="Enter Your Name " aria-label="Username" aria-describedby="basic-addon1">
+                <p class="bg-danger py-3 rounded rounded-3 text-center d-none">Special characters and numbers not allowed</p>
+            </div>
+            <div class="">
+                <input type="email" class="form-control  text-black  email my-2" placeholder="Enter Your Email " aria-label="Username" aria-describedby="basic-addon1">
+                <p class="bg-danger py-3 rounded rounded-3 text-center d-none">Email not valid *exemple@yyy.zzz</p>
+
+            </div>
+            <div class="">
+                <input type="tel" class="form-control  text-black my-2  num" placeholder="Enter Your Phone" aria-label="Username" aria-describedby="basic-addon1">
+                <p class="bg-danger py-3 rounded rounded-3 text-center d-none">Enter valid Phone Number</p>
+
+            </div>
+            <div class="">
+                <input type="number" class="form-control  text-black my-2  age" placeholder="Enter Your Age" aria-label="Username" aria-describedby="basic-addon1">
+                <p class="bg-danger py-3 rounded rounded-3 text-center d-none">Enter valid age</p>
+            </div>
+            <div class="">
+                <input type="password" class="form-control  text-black my-2 pass" placeholder="Enter Your Password " aria-label="Username" aria-describedby="basic-addon1">
+                <p class="bg-danger py-3 rounded rounded-3 text-center d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+            </div>
+            <div class="">
+                <input type="password" class="form-control  text-black my-2  repass" placeholder="Repassword" aria-label="Username" aria-describedby="basic-addon1">
+                <p class="bg-danger py-3 rounded rounded-3 text-center d-none">Enter valid repassword</p>
+            </div>
+            <div class="text-center">
+
+                <button class="bg-black border border-danger border-opacity-75 text-danger-emphasis rounded rounded-3 myBtn"> submit</button>
+            </div>
+        </div>
+    </div>
+
+<p></p>
+
+    <!-- 
+                loading
+    -->
+    <div class="loaderCONT ">
+        <span class="loader"></span>
+    </div>
+
+
+
+    <!--              &&&&&&&             -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>  
+        <script src="./js/mian.js"></script> 
+</body>
+</html>

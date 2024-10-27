@@ -1,0 +1,228 @@
+
+ body{
+    background-color: black;
+    
+ }
+.w-90
+{
+    width: 90%;
+}
+.w-85
+{
+    width: 85%;
+}
+.w-40
+{
+    width: 40%;
+}
+.port-l
+{
+    position: relative;
+    .port-inner 
+    {
+        content:"";
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.553);
+        /* opacity: 0,5 !important; */
+        top: 100%;
+        bottom: 0px;
+        right:0px;
+        left:0px;
+        overflow:hidden;
+        /* height: 0px; */
+        transition: 0.5s;
+        border-radius: 3%;
+        
+        
+        
+    }
+    
+    &:hover
+    {
+        .port-inner 
+        {
+
+            top: 0% !important;
+            /* top: 90%; */
+             bottom: 0px;
+             right:0px;
+             left:0px;
+        }
+    }
+}
+
+
+
+/* 
+
+
+*/
+.menuall
+{
+    z-index: 999;
+    
+}
+.sidebar{
+    font-size: 30px;
+}
+.text-yellow
+{
+    width: 50px;
+}
+ul
+{
+    list-style: none;
+    color: white;
+}
+.menubar, li
+{
+cursor: pointer;
+}
+li{
+   top: 100%;
+   text-align: left;
+   padding-block: 10px;
+   transition: 3s;
+}
+
+/* 
+
+            search
+*/
+
+.search input 
+{
+    
+   &::placeholder {
+    color: rgba(255, 255, 255, 0.56);
+    opacity: 1; /* Firefox */
+  }
+}
+
+/* 
+        loading
+*/
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  .loaderCONT{
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  /* 
+                area show
+  */
+.areaShow , .ingredients
+{
+    i 
+    {
+        font-size: 90px;
+    }
+}
+
+/* 
+    ingredients
+*/
+.ingredients
+{
+    p 
+    {
+        height: 100px;
+        overflow: hidden;
+    }
+}
+
+/* 
+
+
+*/
+.contact
+{
+    transform: translateY(2%);
+    button
+    {
+        /* color: rgba(255, 0, 0, 0.581) !important;
+        border-color: rgba(255, 0, 0, 0.581) !important; */
+        width: 100px;
+        /* &:hover{
+            background-color: red !important;
+            color: white !important;
+        } */
+    }
+}
+.myBtnHover
+{
+    color: red;
+    border-color: red !important;
+    transition: 0.2s;
+    &:hover{
+        background-color: red !important;
+        color: white !important;
+    }
+}
